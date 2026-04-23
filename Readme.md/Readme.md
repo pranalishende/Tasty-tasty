@@ -26,5 +26,17 @@ This project helps beginners understand:
 
 ---
 
+#### Achivements
+* certification at Debugging competiton
+* Training at Trilix
+* certification of Auntrophy
+* certification at National                                                                              Conference ## goal
+- To utilize my skills to contribute best of myself.
+- Learn new things for future purpose.
+---
+ ## Project
+ - Blood Donation Website
+ - New Alarm System
+
 ## Author
 **Pranali Shende**
