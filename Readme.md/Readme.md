@@ -30,7 +30,7 @@ This project helps beginners understand:
 * certification at Debugging competiton
 * Training at Trilix
 * certification of Auntrophy
-* certification at National                                                                              Conference ## goal
+* certification at National                                                                              
 - To utilize my skills to contribute best of myself.
 - Learn new things for future purpose.
 ---
