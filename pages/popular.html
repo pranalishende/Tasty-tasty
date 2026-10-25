@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Tasty | Popular Dishes</title>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #fff8f0;
+        color: #333;
+    }
+
+    /* Navigation */
+    header {
+        background-color: #ff5722;
+        padding: 20px 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header h1 {
+        color: white;
+        font-size: 28px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 18px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ffe082;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 65px 20px;
+        background: linear-gradient(135deg, #ffcc80, #fff0dc);
+    }
+
+    .hero h2 {
+        font-size: 42px;
+        color: #d84315;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    /* Food Section */
+    .food-section {
+        padding: 50px 7%;
+        text-align: center;
+    }
+
+    .food-section h2 {
+        font-size: 32px;
+        color: #d84315;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        color: #666;
+        margin-bottom: 35px;
+    }
+
+    /* Food Cards */
+    .food-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .food-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transition: 0.3s;
+    }
+
+    .food-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .food-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .food-info {
+        padding: 22px;
+    }
+
+    .food-info h3 {
+        color: #e64a19;
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+
+    .food-info p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        color: #2e7d32;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #ff5722;
+        color: white;
+        text-decoration: none;
+        padding: 11px 22px;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background-color: #d84315;
+    }
+
+    /* Special Banner */
+    .banner {
+        background-color: #ffe0b2;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .banner h2 {
+        color: #bf360c;
+        margin-bottom: 12px;
+    }
+
+    .banner p {
+        line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #30251f;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    footer p {
+        margin: 5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .food-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        header {
+            justify-content: center;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 8px;
+        }
+
+        .hero h2 {
+            font-size: 30px;
+        }
+
+        .food-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<!-- Navigation Bar -->
+<header>
+    <h1>🍴 Tasty Tasty</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="continents.html">Continents</a>
+        <a href="popular.html">Popular Dishes</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>🍕 Popular Dishes</h2>
+    <p>
+        Discover the world's most loved dishes!
+        <br>
+        Explore delicious flavors and find your next favorite meal.
+    </p>
+</section>
+
+<!-- Food Cards -->
+<section class="food-section">
+    <h2>Our Favorite Foods ❤️</h2>
+    <p class="subtitle">A delicious collection of food favorites from around the world.</p>
+
+    <div class="food-container">
+
+        <!-- Pizza -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo- pizza"
+                 alt="Pizza"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80'">
+
+            <div class="food-info">
+                <h3>🍕 Italian Pizza</h3>
+                <p>A delicious pizza topped with cheese, sauce, and flavorful toppings.</p>
+                <div class="price">₹249</div>
+                <a href="#special" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <!-- Burger -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+                 alt="Burger">
+
+            <div class="food-info">
+                <h3>🍔 Cheese Burger</h3>
+                <p>A tasty burger filled with cheese, fresh vegetables, and sauces.</p>
+                <div class="price">₹179</div>
+                <a href="#special" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <!-- Pasta -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80"
+                 alt="Pasta">
+
+            <div class="food-info">
+                <h3>🍝 Creamy Pasta</h3>
+                <p>Rich and creamy pasta prepared with herbs and delicious sauce.</p>
+                <div class="price">₹199</div>
+                <a href="#special" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1563379091339-03246963d96a?auto=format&fit=crop&w=800&q=80"
+                 alt="Biryani">
+
+            <div class="food-info">
+                <h3>🍚 Indian Biryani</h3>
+                <p>Aromatic rice cooked with traditional spices and delicious flavors.</p>
+                <div class="price">₹220</div>
+                <a href="#special" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <!-- Sushi -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80"
+                 alt="Sushi">
+
+            <div class="food-info">
+                <h3>🍣 Japanese Sushi</h3>
+                <p>A Japanese favorite featuring carefully prepared rice and fillings.</p>
+                <div class="price">₹299</div>
+                <a href="#special" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <!-- Pancakes -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80"
+                 alt="Pancakes">
+
+            <div class="food-info">
+                <h3>🥞 Sweet Pancakes</h3>
+                <p>Soft, fluffy pancakes served with sweet toppings for breakfast.</p>
+                <div class="price">₹149</div>
+                <a href="#special" class="btn">Explore More</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Special Banner -->
+<section class="banner" id="special">
+    <h2>😋 Good Food, Good Mood!</h2>
+    <p>
+        Every dish tells a story. Explore new tastes,
+        discover new cuisines, and celebrate your love for food!
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>🍴 Tasty Tasty — Bringing Flavors Together!</p>
+    <p>© 2026 Tasty Tasty. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>
